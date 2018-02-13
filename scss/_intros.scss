@@ -1,0 +1,346 @@
+// Intros
+#hero-slider {
+    .slide {
+        min-height: 37.5rem;
+        background-position: center center;
+        background-size: cover;
+        padding: 7.5rem 0;
+        position: relative;
+            
+        @include mq('md', $type: max) {
+            padding: 2.5rem 0;
+            min-height: 25rem;
+        }
+        
+        .container {
+            position: relative;
+            color: $text-light;
+            display: flex;
+            flex: 1;
+            
+            .content {
+                margin-right: 1.5rem;
+                display: flex;
+                flex: 1 50%;
+                flex-direction: column;
+                
+                h1 {
+                    font-size: 3rem;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    margin: 0;
+            
+                    @include mq('md', $type: max) {
+                        font-size: 2rem;
+                    }
+                }
+                
+                p {
+                    font-size: .875rem;
+                    font-weight: 300;
+                    margin: 2rem 0;
+                }
+                
+                .btn {
+                    margin-right: .75rem;
+                }
+            }
+            
+            .image {
+                margin-left: 1.5rem;
+                display: flex;
+                flex: 1 50%;
+                flex-direction: column;
+            
+                @include mq('md', $type: max) {
+                    display: none;
+                }
+                
+                & img {
+                    border: 4px solid $orange-base;   
+                }
+            }
+            
+            @include mq('md', $type: max) {
+                flex-direction: column;
+                justify-content: center;
+                
+                .image {
+                    margin: 3rem 0 0 0;
+                }
+            }
+        }
+        
+        &::before {
+            content: "";
+            background-color: $blue-base;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: .75;
+        }
+    }
+        
+    .owl-dots {
+        background-color: $blue-base;
+        width: auto;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -2.5rem;
+        max-height: 2.5rem;
+        
+        &::after {
+            content: "";
+            position: absolute;
+            left: -.9375rem;
+            width: 0; 
+            height: 0; 
+            border-top: 2.48rem solid transparent;
+            border-right: .9475rem solid $blue-base; 
+        }
+        
+        &::before {
+            content: "";
+            position: absolute;
+            right: -.9375rem;
+            width: 0; 
+            height: 0; 
+            border-top: 2.48rem solid transparent;
+            border-left: .9475rem solid $blue-base; 
+        }
+
+        .owl-dot {
+            background-color: transparent;
+            border: .0625rem solid $orange-base;
+            width: .75rem;
+            height: .75rem;
+            border-radius: 50%;
+            display: inline-flex;
+            margin: .85rem .5rem;
+            
+            &:hover {
+                background-color: $orange-base;
+                @include transition(.5s ease all);
+            }
+            
+        }
+        
+        .active {
+            background-color: $orange-base;
+        }
+    }    
+}
+
+#intro-hero-full-w {
+    color: $text-light;
+    height: 100%;
+    padding: 12.5rem 0 18rem 0;
+    
+    &.breadcrumb-nav {
+        padding: 1rem 0 0 0 !important;
+    }
+    
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    
+    h2 {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 2.25rem;
+        text-align: center;
+        margin: 0;
+    }
+    
+    p {
+        font-weight: 300;
+        font-size: .75rem;
+        margin: 1rem 0;
+        text-align: center;
+    }
+}
+
+#intro-light-boxes {
+    padding: $section-padding;
+    background-image: url('../assets/image08.jpg');
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    color: $text-light;
+    
+    
+    .container {
+        position: relative;
+    }
+    
+    &::before {
+        content: "";
+        background-color: $blue-base;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: .75;
+    }
+    
+    .hero-slogan {
+        margin: 7.5rem 0;
+        
+        h1 {
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        
+        p {
+            font-size: .75rem;
+            width: 50%;
+            
+            @include mq('md', $type: max) {
+                width: 100%;
+            }
+        }
+    }
+    
+    .boxes {
+        display: flex;
+        
+        @include mq('md', $type: max) {
+            flex-direction: column;
+        }
+        
+        .box {
+            flex-basis: 33.3333%;
+            padding: 1.5rem;
+            background-color: $orange-base;
+            color: $blue-base;
+            text-align: center;
+            opacity: .9;
+                
+            @include transition(.5s ease all);
+            
+            h4 {
+                font-weight: 600;
+                font-size: 1rem;
+                text-transform: uppercase;
+            }
+            
+            p {
+                font-weight: 300;
+                font-size: .75rem;
+            }
+            
+            a {
+                color: $text-light;
+                font-size: .75rem;
+                text-decoration: underline;
+                opacity: 0;
+                
+                @include transition(.5s ease all);
+                
+                &:hover {
+                    color: $blue-hover;
+                }
+            }
+            
+            &:hover {
+                background-color: $orange-hover;
+                
+                a {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+#intro-transparent {
+    padding-top: 1rem;
+        
+    .container {
+        position: relative;
+        color: $text-light;
+        display: flex;
+        flex: 1;
+
+        .content {
+            margin-right: 1.5rem;
+            display: flex;
+            flex: 1 50%;
+            flex-direction: column;
+            padding: 10rem 0;
+            max-width: 60%;
+            
+            @include mq('md', $type: max) {
+                max-width: 100%;
+            }
+
+            h1 {
+                font-size: 3rem;
+                text-transform: uppercase;
+                font-weight: 600;
+                margin: 0;
+            }
+
+            p {
+                font-size: .875rem;
+                font-weight: 300;
+                margin: 2rem 0;
+            }
+
+            .btn {
+                margin-right: .75rem;
+            }
+        }
+    }
+  
+    .box {
+        flex-basis: 33.3333%;
+        padding: 2.5rem 5rem;
+        background-color: rgba($blue-base, .5);
+        color: $text-light;
+        text-align: center;
+
+        @include transition(.5s ease all);
+
+        h4 {
+            font-weight: 600;
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: .75rem;
+        }
+
+        a {
+            color: $text-light;
+            font-size: .75rem;
+            text-decoration: underline;
+            opacity: 0;
+
+            @include transition(.5s ease all);
+
+            &:hover {
+                color: $blue-hover;
+            }
+        }
+
+        &:hover {
+            background-color: rgba($orange-hover, .5);
+
+            a {
+                opacity: 1;
+            }
+        }
+    }
+}

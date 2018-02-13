@@ -1,0 +1,232 @@
+// According
+.accordion {
+    .card {
+    border-radius: 0;
+    border: 0;
+    }
+
+    .card-header {
+        background-color: $blue-base;
+        border-radius: 0 !important;
+        border: 0;
+
+        a {
+            font-size: .75rem;
+            color: $text-light;
+            text-decoration: none;
+        }
+    }
+
+    .card-body {
+        font-size: .75rem;
+        font-weight: 300;
+        border: 0;
+    }
+    
+    &.light {
+        .card-header {
+            background-color: $orange-base;
+            border-radius: 0 !important;
+            border: 0;
+
+            a {
+                font-size: .75rem;
+                color: $text-light;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+// Alerts
+.alert {
+    font-size: .75rem;
+    font-weight: 500;
+    border-radius: 0;
+    
+    p {
+        margin: 0;
+    }
+    
+    &.alert-info {
+        background-color: $blue-hover;
+        color: $text-light;
+        border-color: $blue-base;
+        
+        a {
+            color: $text-light;
+        }
+    } 
+    
+    &.alert-warning {
+        background-color: $orange-base;
+        color: $text-light;
+        border-color: $orange-hover;
+        
+        a {
+            color: $text-light;
+        }
+    }
+    
+    &.alert-light {
+        background-color: $gray-100;
+        border: 0;
+        border-left: .25rem solid $orange-base;
+    }
+}
+
+// Breadcrumbs
+.breadcrumbs {
+    padding: $section-padding-xs;
+    background: $orange-base; /* Old browsers */
+    background: -moz-linear-gradient(top,  $orange-base 0%, lighten($orange-base, 8%) 38%,  lighten($orange-base, 8%) 63%, $orange-base 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  $orange-base 0%, lighten($orange-base, 8%) 38%, lighten($orange-base, 8%) 63%,$orange-base 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  $orange-base 0%, lighten($orange-base, 8%) 38%, lighten($orange-base, 8%) 63%,$orange-base 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$orange-base', endColorstr='$orange-base',GradientType=0 ); /* IE6-9 */
+    color: $text-light;
+    
+    &.transparent {
+        background: transparent !important;
+        padding-bottom: 3rem;
+        position: relative;
+        
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        a {
+            color: $text-light !important;
+            text-decoration: none;
+            font-size: 1.5rem !important;
+        }
+
+        .active {
+            color: $orange-base !important;
+        }
+
+        .breadcrumb-item + .breadcrumb-item::before {
+            color: $text-light !important;
+        }
+    }
+    
+    &.dark {
+        background: $blue-base; /* Old browsers */
+        background: -moz-linear-gradient(top,  $blue-base 0%, lighten($blue-base, 8%) 38%,  lighten($blue-base, 8%) 63%, $blue-base 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  $blue-base 0%, lighten($blue-base, 8%) 38%, lighten($blue-base, 8%) 63%,$blue-base 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  $blue-base 0%, lighten($blue-base, 8%) 38%, lighten($blue-base, 8%) 63%,$blue-base 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$blue-base', endColorstr='$blue-base',GradientType=0 ); /* IE6-9 */  
+        
+        a {
+            color: $text-light !important;
+        }
+        
+        .active {
+            color: $orange-base !important;
+        }
+
+        .breadcrumb-item + .breadcrumb-item::before {
+            color: $text-light !important;
+        }
+    }
+
+    .breadcrumb {
+        background-color: transparent;
+        margin: 0;
+
+        a {
+            color: $blue-base;
+            text-decoration: none;
+            font-size: .875rem;
+        }
+
+        .active {
+            color: $text-light;
+        }
+
+        .breadcrumb-item + .breadcrumb-item::before {
+            color: $blue-base;
+        }
+    }
+}
+
+// Timeline
+.timeline {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    
+    img {
+        max-width: 100%;
+    }
+    
+    .item {
+        display: flex;
+        
+        .image {
+            flex-basis: 25%;
+            margin-bottom: 2rem;
+            overflow: hidden;
+            
+            img {
+                @include transition(.5s ease all);
+                
+                &:hover {
+                    transform: scale(2,2);
+                }
+            }
+        }
+        
+        .timeline-line {
+            display: block;
+            width: .2rem;
+            height: 100%;
+            background-color: $blue-hover;
+            margin: 0 2rem;
+            position: relative;
+            
+            &::before {
+                content: "";
+                width: 1rem;
+                height: 1rem;
+                background-color: $orange-base;
+                position: absolute;
+                top: -.1rem;
+                left: -.41rem;
+                border-radius: 50%;
+            }
+        }
+        
+        .content {
+            flex: 1;
+            
+            h4 {
+                font-size: 1.125rem;
+                font-weight: 600;
+                color: $orange-base;
+                margin: 0;
+                text-transform: uppercase;
+            }
+            
+            span {
+                display: block;
+                font-size: .75rem;
+                font-weight: 500;
+                margin-bottom: 1rem;
+                margin-top: .25rem;
+            }
+            
+            p {
+                font-size: .75rem;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+.form-control {
+    border: 0;
+    border-radius: 0;
+    font-size: .75rem;
+    padding: .75rem 1rem;
+}

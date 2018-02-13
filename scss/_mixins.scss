@@ -1,0 +1,46 @@
+// Transition
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+// Media queries
+$breakpoints: (
+    "xs": 0,
+    "sm": 576px,
+    "md": 768px,
+    "lg": 922px,
+    "xl": 1200px
+);
+@mixin mq($width, $type: min) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @if $type == max {
+            $width: $width - 1px;
+        }
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}
+
+// Titles Before Pseudo 
+@mixin titleBefore($color, $size, $height) {
+    content: "";
+    border: $size solid $color;
+    position: absolute;
+    width: 100%;
+    height: $height;
+    
+    @content;
+}
+
+// Box Shadow
+@mixin boxShadow($param) {
+    -webkit-box-shadow: $param;
+       -moz-box-shadow: $param;
+            box-shadow: $param;
+}

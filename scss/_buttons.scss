@@ -1,0 +1,57 @@
+// Buttons
+.btn-primary {
+    border: 0;
+    border-radius: 0;
+    background-color: $blue-base;
+    font-size: .75rem;
+    padding: .75rem 1.125rem;
+    text-transform: uppercase;
+    
+    &:hover {
+        background-color: $blue-hover;
+    }
+}
+
+.btn-light {
+    border: 0;
+    border-radius: 0;
+    background-color: $text-light;
+    color: $blue-base;
+    font-size: .75rem;
+    padding: .75rem 1.125rem;
+    text-transform: uppercase;
+    
+    &:hover {
+        color: $text-light;
+        background-color: $blue-base;
+    }
+}
+
+
+.btn-secondary {
+    border: 0;
+    border-radius: 0;
+    background-color: $orange-base;
+    color: $blue-base;
+    font-size: .75rem;
+    padding: .75rem 1.125rem;
+    text-transform: uppercase;
+    
+    &.inverse {
+        color: $text-light;
+        
+        &:hover {
+            color: $text-light;
+        }
+    }
+    
+    &:hover {
+        color: $blue-base;
+        background-color: lighten( $orange-base, 10% );
+    }
+}
+
+.tiny {
+    padding: .5rem .75rem;
+    font-size: .6875rem;
+}

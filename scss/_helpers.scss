@@ -1,0 +1,82 @@
+// Help Classes
+img {max-width: 100%;}
+
+h1 {font-size: 1.5rem;}
+h2 {font-size: 1.375rem;}
+h3 {font-size: 1.125rem;}
+h4 {font-size: 1rem;}
+h5 {font-size: .9375rem;}
+h6 {font-size: .875rem;}
+p {font-size: .75rem; font-weight: 300;}
+
+.text-orange {
+    color: $orange-base !important;
+}
+
+.title {
+    margin-bottom: 1.5rem;
+    
+    &.light {
+        h2 {
+            &:before {
+                border-color: $text-light !important;
+            }
+        }
+        
+        .line {
+            background-color: $blue-base;
+
+            &:before {
+                background-color: $blue-base;
+            }
+
+            &:after {
+                background-color: $blue-base;
+            }
+        }
+    }
+    
+    h2 {
+        font-size: 1.375rem;
+        font-weight: 600;
+        margin-bottom: .2rem;
+        position: relative;
+        display: table;
+        text-transform: uppercase;
+    }
+    
+    .line {
+        width: 5rem;
+        height: .3rem;
+        margin-left: .125rem;
+        background-color: $orange-base;
+        position: relative;
+        display: block;
+        margin-bottom: .4rem;
+
+        &:before {
+            content: "";
+            width: 5.25rem;
+            height: .1rem;
+            background-color: $orange-base;
+            position: absolute;
+            top: 0;
+            left: -.125rem;
+        }
+
+        &:after {
+            content: "";
+            width: 5.25rem;
+            height: .1rem;
+            background-color: $orange-base;
+            position: absolute;
+            bottom: -.19rem;
+            left: -.125rem;
+        }
+    }
+        
+    p {
+        font-size: .625rem !important;
+        font-weight: 300;
+    }
+}

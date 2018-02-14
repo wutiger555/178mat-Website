@@ -191,7 +191,7 @@
       flex: 1; }
       .timeline .item .content h4 {
         font-size: 1.125rem;
-        font-weight: 600;
+        font-weight: 550;
         color: #ecbe33;
         margin: 0;
         text-transform: uppercase; }
@@ -624,7 +624,7 @@ body {
       #intro-transparent .container .content h1 {
         font-size: 3rem;
         text-transform: uppercase;
-        font-weight: 600;
+        font-weight: 500;
         margin: 0; }
       #intro-transparent .container .content p {
         font-size: .875rem;
@@ -644,7 +644,6 @@ body {
     -o-transition: 0.5s ease all;
     transition: 0.5s ease all; }
     #intro-transparent .box h4 {
-      font-weight: 600;
       font-size: 1rem;
       text-transform: uppercase; }
     #intro-transparent .box p {
@@ -1066,7 +1065,6 @@ body {
           font-size: 2rem;
           margin-right: 1rem; }
         #content-box-first .boxes .box-content .box h4 {
-          font-weight: 600;
           font-size: .875rem;
           text-transform: uppercase; }
         #content-box-first .boxes .box-content .box p {

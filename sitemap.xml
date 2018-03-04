@@ -1,6 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
-  <url>
-    <loc>http://www.178mat.com/index.html</loc> 
-  </url>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://www.178mat.com/</loc>
+  <lastmod>2018-03-04T09:50:42+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://www.178mat.com/index.html</loc>
+  <lastmod>2018-03-04T09:50:42+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.178mat.com/services-2cm.html</loc>
+  <lastmod>2018-03-04T08:24:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.178mat.com/faq.html</loc>
+  <lastmod>2018-03-04T08:24:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.178mat.com/contact.html</loc>
+  <lastmod>2018-03-04T08:24:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.178mat.com/team.html</loc>
+  <lastmod>2018-03-04T08:24:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.178mat.com/404.html</loc>
+  <lastmod>2018-03-04T08:24:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.178mat.com/single-services.html</loc>
+  <lastmod>2018-03-04T08:24:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.178mat.com/about.html</loc>
+  <lastmod>2018-03-04T08:24:04+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.178mat.com/company-history.html</loc>
+  <lastmod>2018-03-04T08:24:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.178mat.com/services-sidebar.html</loc>
+  <lastmod>2018-03-04T08:24:09+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.178mat.com/services-hero.html</loc>
+  <lastmod>2018-03-04T08:24:09+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.178mat.com/services-grid-3.html</loc>
+  <lastmod>2018-03-04T08:24:08+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.178mat.com/services-grid-4.html</loc>
+  <lastmod>2018-03-04T08:24:09+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.178mat.com/projects-grid-2.html</loc>
+  <lastmod>2018-03-04T08:24:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.178mat.com/projects-grid-3.html</loc>
+  <lastmod>2018-03-04T08:24:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.178mat.com/projects-grid-4.html</loc>
+  <lastmod>2018-03-04T08:24:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.178mat.com/project-single.html</loc>
+  <lastmod>2018-03-04T08:24:08+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.178mat.com/blog.html</loc>
+  <lastmod>2018-03-04T08:24:04+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.178mat.com/blog-single.html</loc>
+  <lastmod>2018-03-04T08:24:05+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
 </urlset>
